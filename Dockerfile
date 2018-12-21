@@ -6,3 +6,6 @@ RUN apk update && apk upgrade && \
 RUN npm install -g gh-pages
 
 ADD entrypoint.sh /entrypoint.sh
+
+COPY "entrypoint.sh" "/entrypoint.sh"
+ENTRYPOINT ["/entrypoint.sh"]
