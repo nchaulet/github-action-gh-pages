@@ -7,8 +7,6 @@ simple github action to deploy on github pages
 ## Configuration
 
 You need to provide the following varaibles:
-`GIT_EMAIL`: git user email
-`GIT_USERNAME`: git user name
 `GITHUB_TOKEN`: github token
 `PUBLIC_PATH`: the directory you want to publish (optionnal)
 
@@ -35,9 +33,7 @@ action "nchaulet/github-action-gh-pages@master" {
   uses = "nchaulet/github-action-gh-pages@master"
   needs = ["Deploy"]
   secrets = [
-    "GITHUB_TOKEN",
-    "GIT_EMAIL",
-    "GIT_USERNAME",
+    "GITHUB_TOKEN"
   ]
 }
 ```
