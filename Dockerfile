@@ -1,7 +1,7 @@
 FROM node:10.14.2-alpine
 
 RUN apk update && apk upgrade && \
-  apk add --no-cache bash git openssh
+  apk add --no-cache bash git openssh curl
 
 RUN npm install -g gh-pages
 
