@@ -18,6 +18,3 @@ if [ $retval -ne 0 ]; then
   exit 2
 fi
 
-curl --request POST -H "Authorization: token ${GITHUB_TOKEN}" \
-  --url "https://api.github.com/repos/$GITHUB_REPOSITORY/pages/builds" \
-  --header 'accept:   application/vnd.github.mister-fantastic-preview+json'
